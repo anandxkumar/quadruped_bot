@@ -1,0 +1,58 @@
+else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 'b')
+    {
+      step_back(5);
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 'l')
+    {
+      turn_left(5);
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 'r')
+    {
+      turn_right(5);
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 's')
+    {
+      stand();
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 'i')
+    {
+      sit();
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else if(Serial.available() > 0)
+  {
+    if(Serial.read() == 'h')
+    {
+      hand_shake(3);
+      delay(2000);
+      // wait for a second
+    }
+  }
+  else
+  {
+    return;
+  }
